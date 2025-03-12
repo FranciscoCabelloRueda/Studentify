@@ -7,13 +7,13 @@ files:
 hooks:
   ApplicationStop:
     - location: deploy-scripts/appstop.sh
-      timeout: 300
+      timeout: 30
       runas: root
   BeforeInstall:
     - location: deploy-scripts/beforeinstall.sh
-      timeout: 300
+      timeout: 30
       runas: root
   ApplicationStart:
     - location: deploy-scripts/appstart.sh
-      timeout: 300
+      timeout: 30
       runas: root
